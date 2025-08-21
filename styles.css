@@ -101,3 +101,33 @@ body {
   color: hsl(0, 0%, 81%);
   line-height: 1.4;
 }
+
+@media screen and (min-width: 1440px) {
+  .testimonials {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+  }
+  .testimonial {
+    width: auto;
+    height: 100%;
+  }
+  .testimonial-one {
+    grid-column: 1 / span 2;
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+    background-size: 150px;
+  }
+  .testimonial-three {
+    grid-column: 1 / span 1;
+  }
+  .testimonial-four {
+    grid-column: 2 / span 2;
+  }
+  .testimonial-five {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+  }
+}
